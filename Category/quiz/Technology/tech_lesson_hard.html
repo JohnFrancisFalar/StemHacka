@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../lesson.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology Lesson - Hard</title>
+</head>
+<body>
+  <ul>
+    <li><strong>Python:</strong> A programming language symbolized by a snake and known for simplicity and versatility.</li>
+    <li><strong>HTTP:</strong> Stands for HyperText Transfer Protocol, the foundation of data communication on the web.</li>
+    <li><strong>GPU:</strong> The Graphics Processing Unit is responsible for rendering images, video, and animations.</li>
+    <li><strong>Smartphone Processor:</strong> Acts as the brain of the phone, managing tasks and operations.</li>
+    <li><strong>Router:</strong> A device that enables wireless connection to the internet.</li>
+    <li><strong>Software Types:</strong> Software includes programs like operating systems and browsers. Hardware like keyboards is not software.</li>
+    <li><strong>URL:</strong> Uniform Resource Locator — the web address of a specific page or file online.</li>
+    <li><strong>Android OS:</strong> Developed by Google for smartphones and tablets.</li>
+    <li><strong>ROM:</strong> Read-Only Memory is non-volatile and retains data even when the power is off.</li>
+    <li><strong>Ctrl + Z:</strong> A common keyboard shortcut to undo the last action in many software programs.</li>
+  </ul>
+
+  <div class="next-container">
+    <button class="next-btn" onclick="location.href='tech_quiz.html?difficulty=hard'">Next</button>
+  </div>
+
+  <div class="bottom-nav">
+    <button onclick="location.href='../../../index.html'">Feed</button>
+    <button onclick="loadChat()">Ask AI</button>
+    <button onclick="location.href='explore.html'">Explore</button>
+    <button onclick="location.href='../../../story_quiz.html'">Quests</button>
+  </div>
+
+  <script type="module">
+    window.loadChat = function () {
+      import('https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js').then(({ createChat }) => {
+        createChat({
+          webhookUrl: 'https://n8n.srv906185.hstgr.cloud/webhook/58598dc7-93aa-46f9-b5d9-4b2657025500/chat'
+        });
+      });
+    }
+  </script>
+</body>
+</html>

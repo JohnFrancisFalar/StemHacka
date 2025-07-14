@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../lesson.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology Lesson – Medium</title>
+</head>
+<body>
+  <ul>
+    <li><strong>CPU (Central Processing Unit):</strong> This is the brain of the computer, responsible for processing all instructions.</li>
+    <li><strong>F5 Key:</strong> Pressing F5 on most browsers refreshes or reloads the current web page.</li>
+    <li><strong>Solid-State Storage:</strong> USB flash drives use solid-state memory, meaning no moving parts and faster access.</li>
+    <li><strong>Microsoft:</strong> The Windows operating system was developed by Microsoft, one of the largest tech companies in the world.</li>
+    <li><strong>Antivirus Software:</strong> This protects your computer by detecting and removing viruses, malware, and other threats.</li>
+    <li><strong>HTML:</strong> Stands for Hyper Text Markup Language, used to structure web pages and their content.</li>
+    <li><strong>Hard Drive:</strong> Stores data long-term, even when the computer is turned off. It can be HDD (magnetic) or SSD (solid-state).</li>
+    <li><strong>Computer Virus:</strong> A harmful software program designed to spread and disrupt system operations or steal data.</li>
+    <li><strong>Top-Level Domain (TLD):</strong> It’s the last part of a URL (.com, .org, .edu) that indicates the type of organization.</li>
+    <li><strong>Copy Shortcut:</strong> Ctrl + C is a universal keyboard shortcut for copying selected text or items to the clipboard.</li>
+  </ul>
+
+  <div class="next-container">
+    <button onclick="location.href='quiz/Technology/tech_quiz.html?difficulty=medium'">Next</button>
+  </div>
+
+  <div class="bottom-nav">
+    <button onclick="location.href='../../../index.html'">Feed</button>
+    <button onclick="loadChat()">Ask AI</button>
+    <button onclick="location.href='explore.html'">Explore</button>
+    <button onclick="location.href='../../../story_quiz.html'">Quests</button>
+  </div>
+
+  <script type="module">
+    window.loadChat = function () {
+      import('https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js').then(({ createChat }) => {
+        createChat({
+          webhookUrl: 'https://n8n.srv906185.hstgr.cloud/webhook/58598dc7-93aa-46f9-b5d9-4b2657025500/chat'
+        });
+      });
+    }
+  </script>
+</body>
+</html>

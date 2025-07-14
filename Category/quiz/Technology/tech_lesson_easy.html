@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../lesson.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Lesson - Easy</title>
+</head>
+<body>
+  <h2>Technology Lesson (Easy)</h2>
+  <ul>
+    <li><strong>WWW:</strong> "WWW" stands for World Wide Web, a system of interlinked hypertext documents accessed via the internet.</li>
+    <li><strong>Computer Output:</strong> A monitor displays the output (visuals/text) from the computer.</li>
+    <li><strong>Email Symbol:</strong> The "@" symbol is commonly used in email addresses.</li>
+    <li><strong>Keyboard Use:</strong> A keyboard allows you to input text by typing.</li>
+    <li><strong>Smartphone Type:</strong> A smartphone functions primarily as an input device for communication, apps, and browsing.</li>
+    <li><strong>Printer Function:</strong> A printer is used to produce physical copies of digital documents.</li>
+    <li><strong>Computer Brain:</strong> The CPU (Central Processing Unit) is considered the brain of the computer.</li>
+    <li><strong>Cursor Control:</strong> A mouse moves the cursor on the screen to navigate or click items.</li>
+    <li><strong>Picture File Format:</strong> ".jpg" is a common image file format for photos and graphics.</li>
+    <li><strong>Wi-Fi Use:</strong> Wi-Fi allows devices to connect to the internet wirelessly.</li>
+  </ul>
+
+  <div class="next-container">
+    <button class="next-btn" onclick="location.href='tech_quiz.html?difficulty=easy'">Start Quiz</button>
+  </div>
+
+  <div class="bottom-nav">
+    <button onclick="location.href='../../../index.html'">Feed</button>
+    <button onclick="loadChat()">Ask AI</button>
+    <button onclick="location.href='explore.html'">Explore</button>
+    <button onclick="location.href='../../../story_quiz.html'">Quests</button>
+  </div>
+
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <script type="module">
+    window.loadChat = function () {
+      import('https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js').then(({ createChat }) => {
+        createChat({
+          webhookUrl: 'https://n8n.srv906185.hstgr.cloud/webhook/58598dc7-93aa-46f9-b5d9-4b2657025500/chat'
+        });
+      });
+    }
+  </script>
+</body>
+</html>

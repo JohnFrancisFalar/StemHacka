@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Story Quiz</title>
+  <link rel="stylesheet" href="story_quiz.css" />
+</head>
+<body>
+  <div class="story-quiz-container">
+    <h1 id="storyTitle">Story Quiz</h1>
+    <div id="storyContent"></div>
+    <div id="storyProgressBar"><div id="storyProgress"></div></div>
+  </div>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+    window.loadChat = function (){
+	import ('https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js').then(({createChat}) => {
+        createChat({
+		webhookUrl: 'https://n8n.srv906185.hstgr.cloud/webhook/58598dc7-93aa-46f9-b5d9-4b2657025500/chat'
+	});
+    }) ;
+
+	
+    }
+</script>
+<script src="script.js"></script>
+<div class="bottom-nav">
+    <button onclick="location.href='index.html'">Feed</button>
+    <button onclick="loadChat()">Ask AI</button>
+    <button onclick="location.href='explore.html'">Explore</button>
+    <button onclick="location.href='story_quiz.html'">Quests</button>
+</div>
+  <script src="story_quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../lesson.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy</title>
+</head>
+<body>
+  <ul>
+    <li><strong>Chemical Symbols:</strong> Gold is represented by the symbol Au on the periodic table.</li>
+    <li><strong>Brain Function:</strong> The cerebellum controls balance and muscle coordination.</li>
+    <li><strong>Cell Powerhouse:</strong> Mitochondria produce energy (ATP) through cellular respiration.</li>
+    <li><strong>Laws of Motion:</strong> Sir Isaac Newton defined the basic laws that describe the motion of objects.</li>
+    <li><strong>Planetary Moons:</strong> Saturn has the most confirmed moons in the solar system.</li>
+    <li><strong>Genetics:</strong> Genes are units of heredity made of DNA.</li>
+    <li><strong>pH of Water:</strong> Pure water has a neutral pH of 7.</li>
+    <li><strong>Animal Diets:</strong> Herbivores eat only plants.</li>
+    <li><strong>Hardest Substance:</strong> Diamond is the hardest natural material known.</li>
+    <li><strong>Exhaled Gas:</strong> Humans exhale carbon dioxide as a waste product of respiration.</li>
+  </ul>
+
+  <!-- ✅ Next Button -->
+  <div class="next-container">
+    <button class="next-btn" onclick="location.href='science_quiz.html?difficulty=easy'">Next</button>
+  </div>
+
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <script type="module">
+    window.loadChat = function () {
+      import('https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js').then(({ createChat }) => {
+        createChat({
+          webhookUrl: 'https://n8n.srv906185.hstgr.cloud/webhook/58598dc7-93aa-46f9-b5d9-4b2657025500/chat'
+        });
+      });
+    }
+  </script>
+
+  <!-- Bottom Nav -->
+  <div class="bottom-nav">
+    <button onclick="location.href='../../../index.html'">Feed</button>
+    <button onclick="loadChat()">Ask AI</button>
+    <button onclick="location.href='explore.html'">Explore</button>
+    <button onclick="location.href='../../../story_quiz.html'">Quests</button>
+  </div>
+</body>
+</html>

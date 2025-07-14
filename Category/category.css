@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #fcefd9;
+}
+
+button{
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f5e9ff;
+}

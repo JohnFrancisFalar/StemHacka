@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore</title>
+</head>
+<body>
+  <h1>Explore STEM</h1>
+
+  <div class="category">
+    <!-- Science Card -->
+    <div class="card">
+      <h2 class="subject">Science</h2>
+      <div class="card-body">
+        <img class="icon" src="LogoPics/ScienceExplore.png" alt="Science">
+        <p class="context">The systematic study of the natural and physical world through observation and experimentation.</p>
+      </div>
+      <button class="journey-button" onclick="location.href='Category/science.html'">Start Journey</button>
+    </div>
+
+    <!-- Technology Card -->
+    <div class="card">
+      <h2 class="subject">Technology</h2>
+      <div class="card-body">
+        <img class="icon" src="LogoPics/TechnologyExplore.png" alt="Technology">
+        <p class="context">The practical application of scientific knowledge and the development of new technologies.</p>
+      </div>
+      <button class="journey-button" onclick="location.href='Category/technology.html'">Start Journey</button>
+    </div>
+
+    <!-- Engineering Card -->
+    <div class="card">
+      <h2 class="subject">Engineering</h2>
+      <div class="card-body">
+        <img class="icon" src="LogoPics/EngineeringExplore.png" alt="Engineering">
+        <p class="context">It involves using science and math to design, build, and improve systems, structures, and technologies.</p>
+      </div>
+      <button class="journey-button">Start Journey</button>
+    </div>
+
+    <!-- Mathematics Card -->
+    <div class="card">
+      <h2 class="subject">Mathematics</h2>
+      <div class="card-body">
+        <img class="icon" src="LogoPics/MathExplore.png" alt="Mathematics">
+        <p class="context">The foundational language and tool for understanding and manipulating the world, from the smallest particles to the largest structures.</p>
+      </div>
+      <button class="journey-button">Start Journey</button>
+    </div>
+  </div>
+
+  <!-- n8n Chat Script -->
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <script type="module">
+    window.loadChat = function () {
+      import('https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js').then(({ createChat }) => {
+        createChat({
+          webhookUrl: 'https://n8n.srv906185.hstgr.cloud/webhook/58598dc7-93aa-46f9-b5d9-4b2657025500/chat'
+        });
+      });
+    }
+  </script>
+
+  <!-- Bottom Nav -->
+  <div class="bottom-nav">
+    <button onclick="location.href='../index.html'">Feed</button>
+    <button onclick="loadChat()">Ask AI</button>
+    <button onclick="location.href='explore.html'">Explore</button>
+    <button>Quests</button>
+  </div>
+
+  <script src="explore.js"></script>
+</body>
+</html>
